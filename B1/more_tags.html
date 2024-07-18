@@ -10,27 +10,50 @@
     <label for="fname">Firts name</label>
     <input type="text" id ="fname"><br><br>
 
-    <label for="bd">Birth day</label>
-    <input type="number" id="bd"><br><br>
+    <label for="fname">Last name</label>
+    <input type="text" id ="fname"><br><br>
 
-    <label for="depmt">Deparment</label>
-    <select name="cars" id="depmt">
-    <optgroup label="marketing">
-      <option value="volvo">Volvo</option>
-      <option value="saab">Saab</option>
-      <option value="mercedes">Mercedes</option>
-      <option value="audi">Audi</option>
-    </optgroup>
-  </select><br><br>
+   
+      <label for="birthdaytime">Birthday (date and time):</label>
+      <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+      <br><br>
+    
 
-  <form action="/action_page.php">
-    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-    <label for="vehicle1"> I have a bike</label><br>
-    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-    <label for="vehicle2"> I have a car</label><br>
-    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-    <label for="vehicle3"> I have a boat</label><br><br>
-    <input type="submit" value="Submit">
-  </form>
+    <label for="gender">Chọn giới tính:</label>
+    <select id="gender" name="gender">
+      <option value="male">Nam</option>
+      <option value="female">Nữ</option>
+      <option value="other">Khác</option>
+      <option value="prefer-not-to-say">Không muốn nói</option>
+      <option value="prefer-not-to-say">ở giữa </option>
+    </select><br><br>
+     <label for = "dc"> Dia chi: </label>
+     <input type="text" id="dc" name="dc">
+    </select><br><br>
+    <label for = "dc"> Email: </label>
+    <input type="text" id="dc" name="dc"><br><br>
+     <label for = "dc"> Sdt: </label>
+     <input type="text" id="dc" name="dc"><br><br>
+     <label for = "dc"> Color: </label>
+    <input type="color" id="color" name="color"> <br><br>  
+    <label for = "dc"> Lựa chọn nghề bạn thích : </label>     
+    <form>
+      <input type="radio" id="option1" name="options" value="option1">
+      <label for="option1">Bán thịt </label><br>
+      <input type="radio" id="option2" name="options" value="option2">
+      <label for="option2">Buôn lậu</label><br>
+      <input type="radio" id="option3" name="options" value="option3">
+      <label for="option3">bán tạp hóa </label><br>
+  </form> 
+  <form><br>
+    <label for="volume">Chỉnh volum của thằng bên cạnh  :</label>
+    <input type="range" id="volume" name="volume" min="0" max="100" step="1" value="50">
+</form><br>
+<form id="myForm">
+  <label for="username">Rét:</label>
+  <input type="text" id="username" name="username">
+  <input type="reset" value="Reset">
+</form>
+  <input type="submit" value="Submit"> <input type="submit" value="Clear">
 </body>
 </html>
